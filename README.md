@@ -1,4 +1,4 @@
-# JSON Streaming Parser
+# JSON Streaming Protocol Reader
 
 Simple [JSON streaming](https://en.wikipedia.org/wiki/JSON_streaming) protocol parser that allows to handle each record individually.
 
