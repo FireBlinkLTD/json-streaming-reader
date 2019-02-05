@@ -29,6 +29,7 @@ export class JsonStream extends Transform {
             } catch (e) {
                 this.push(null); // stop stream
                 this.emit('error', e);                
+                
                 return;
             }
 
@@ -39,7 +40,7 @@ export class JsonStream extends Transform {
                 // push record to stream
                 this.push({record});
             }
-        })
+        });
     }
 
     _transform(chunk: any, encoding: string, callback: TransformCallback): void {

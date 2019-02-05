@@ -46,9 +46,9 @@ class JsonStreamTestSuite {
         const actual: any[] = [];
         stream.on('data', (streamValue: any) => {
             actual.push(streamValue.record);
-        })
+        });
 
-        let data: string[] = [];
+        const data: string[] = [];
         for (const record of expected) {
             data.push(JSON.stringify(record));
         }
@@ -69,9 +69,9 @@ class JsonStreamTestSuite {
         const actual: any[] = [];
         stream.on('data', (streamValue: any) => {
             actual.push(streamValue.record);
-        })
+        });
 
-        let data: string[] = [];
+        const data: string[] = [];
         for (const record of expected) {
             data.push(JSON.stringify(record));
         }
