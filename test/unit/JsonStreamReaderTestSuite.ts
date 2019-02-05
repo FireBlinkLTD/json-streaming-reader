@@ -1,9 +1,9 @@
 import * as assert from 'assert';
 import { suite, test } from 'mocha-typescript';
-import { JsonStream } from '../../src/JsonStream';
+import { JsonStreamReader } from '../../src/JsonStreamReader';
 import { JsonStreamRecordBuilder } from '../../src';
 
-class JsonStreamPatched extends JsonStream {
+class JsonStreamPatched extends JsonStreamReader {
     updateJsonStreamRecordBuilder(builder: JsonStreamRecordBuilder) {
         this.builder = builder;
     }    
@@ -20,7 +20,7 @@ class JsonStreamRecordBuilderPatched extends JsonStreamRecordBuilder {
 }
 
 @suite()
-class JsonStreamTestSuite {
+class JsonStreamReaderTestSuite {
     @test()
     async lineDelimited(): Promise<void> {
         const expected = [
@@ -42,7 +42,7 @@ class JsonStreamTestSuite {
             'str'
         ];
 
-        const stream = new JsonStream();        
+        const stream = new JsonStreamReader();        
         const actual: any[] = [];
         stream.on('data', (streamValue: any) => {
             actual.push(streamValue.record);
@@ -65,9 +65,9 @@ class JsonStreamTestSuite {
             { b: 2 }
         ];
 
-        const stream = new JsonStream();        
+        const stream = new JsonStreamReader();        
         const actual: any[] = [];
-        stream.on('data', (streamValue: any) => {
+        stream.on('data', (streamValue) => {
             actual.push(streamValue.record);
         });
 

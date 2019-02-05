@@ -49,17 +49,19 @@ yarn add json-streaming-reader
 Then just import `JsonStream` like this:
 
 ```javascript
-import {JsonStream} from 'json-streaming-reader'
+import {JsonStreamReader} from 'json-streaming-reader'
 ```
 
 And pipe the reading stream to it like this:
 
 ```javascript
-const jsonStream = new JsonStream();
-yourStream.pipe(jsonStream);
+const jsonStream = new JsonStreamReader();
+readStream.pipe(jsonStream);
 
-jsonStream.on('data', (record) => {
+jsonStream.on('data', (data) => {
     // do something with the record
-    console.log(JSON.stringify(record));
+    // NOTE: `data` is an object with single field `record` that host actual 
+    // record value.
+    console.log(JSON.stringify(data.record));
 });
 ```

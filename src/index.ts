@@ -1,2 +1,2 @@
-export * from './JsonStream';
+export * from './JsonStreamReader';
 export * from './JsonStreamRecordBuilder';

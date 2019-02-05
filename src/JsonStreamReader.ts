@@ -3,7 +3,7 @@ import * as StreamJson from 'stream-json';
 
 import { JsonStreamRecordBuilder } from './JsonStreamRecordBuilder';
 
-export class JsonStream extends Transform {
+export class JsonStreamReader extends Transform {
     protected parser: StreamJson.Parser;
     protected builder: JsonStreamRecordBuilder; 
 
@@ -41,7 +41,7 @@ export class JsonStream extends Transform {
                 this.push({record});
             }
         });
-    }
+    }    
 
     _transform(chunk: any, encoding: string, callback: TransformCallback): void {
         this.parser._transform(chunk, encoding, callback);
