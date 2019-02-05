@@ -32,3 +32,34 @@ Not supported.
 
 Not supported.
 
+## Usage
+
+If you use NPM:
+
+```bash
+npm i --save json-streaming-reader
+```
+
+If you use YARN:
+
+```bash
+yarn add json-streaming-reader
+```
+
+Then just import `JsonStream` like this:
+
+```javascript
+import {JsonStream} from 'json-streaming-reader'
+```
+
+And pipe the reading stream to it like this:
+
+```javascript
+const jsonStream = new JsonStream();
+yourStream.pipe(jsonStream);
+
+jsonStream.on('data', (record) => {
+    // do something with the record
+    console.log(JSON.stringify(record));
+});
+```
