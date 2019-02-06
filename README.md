@@ -1,5 +1,9 @@
 # JSON Streaming Protocol Reader
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/FireBlinkLTD/json-streaming-reader.svg)](https://greenkeeper.io/)
+[![CircleCI](https://circleci.com/gh/FireBlinkLTD/json-streaming-reader.svg?style=svg)](https://circleci.com/gh/FireBlinkLTD/json-streaming-reader)
+[![codecov](https://codecov.io/gh/FireBlinkLTD/json-streaming-reader/branch/master/graph/badge.svg)](https://codecov.io/gh/FireBlinkLTD/json-streaming-reader)
+
 Simple [JSON streaming](https://en.wikipedia.org/wiki/JSON_streaming) protocol parser that allows to handle each record individually.
 
 ## Supported Stream Types
