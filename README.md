@@ -52,7 +52,11 @@ yarn add json-streaming-reader
 
 Then just import `JsonStream` like this:
 
-```javascript
+```typescript
+// if you use JavaScript:
+const JsonStreamReader = require('json-streaming-reader').JsonStreamReader;
+
+// or if you use TypeScript:
 import {JsonStreamReader} from 'json-streaming-reader'
 ```
 
@@ -64,8 +68,9 @@ readStream.pipe(jsonStream);
 
 jsonStream.on('data', (data) => {
     // do something with the record
-    // NOTE: `data` is an object with single field `record` that host actual 
-    // record value.
-    console.log(JSON.stringify(data.record));
+    // NOTE: `data` is an object with single field `record` that hosts actual value.
+    const {record} = data.record;
+    
+    console.log(record);
 });
 ```
