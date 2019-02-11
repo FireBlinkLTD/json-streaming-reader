@@ -53,7 +53,9 @@ class JsonStreamReaderTestSuite {
             data.push(JSON.stringify(record));
         }
 
-        await new Promise(res => stream.write(data.join('\n'), res));
+        await new Promise(res => stream.write(data.join('\n'), () => {
+            res();
+        }));
 
         assert.deepStrictEqual(actual, expected);
     }
@@ -76,7 +78,9 @@ class JsonStreamReaderTestSuite {
             data.push(JSON.stringify(record));
         }
 
-        await new Promise(res => stream.write(data.join(''), res));
+        await new Promise(res => stream.write(data.join(''), () => {
+            res();
+        }));
 
         assert.deepStrictEqual(actual, expected);
     }
@@ -87,13 +91,15 @@ class JsonStreamReaderTestSuite {
         const stream = new JsonStreamPatched();
         stream.updateJsonStreamRecordBuilder(builder);        
 
-        let error: Error;
+        let error!: Error;
         stream.on('error', (err: Error) => {
             error = err;
         });            
 
-        await new Promise(res => stream.write('{}', res));
-
+        await new Promise<void>(res => stream.write('{}', () => {
+            res();
+        }));
+        
         assert.strictEqual(error.message, 'test');
     }
 }

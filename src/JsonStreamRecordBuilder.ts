@@ -20,8 +20,8 @@ export class JsonStreamRecordBuilder {
     private isArray = false;
     private isObject = false;
     
-    private childFieldKey: string;
-    private childFieldValueBuilder: JsonStreamRecordBuilder;
+    private childFieldKey: string | undefined;
+    private childFieldValueBuilder: JsonStreamRecordBuilder | undefined;
 
     private static SUPPORTED_NAMES = Object.keys(NAMES)
         .map(name => NAMES[name as any]);        

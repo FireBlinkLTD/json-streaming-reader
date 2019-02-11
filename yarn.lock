@@ -97,13 +97,13 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@commitlint/cli@7.5.0":
-  version "7.5.0"
-  resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-7.5.0.tgz#6967633e45239daa09f1ff080cbd66e6e9ac11bc"
-  integrity sha512-ts5b7eCF5B2qhUtgXuFFVkhlgnkSqKVyrq9Eu197bCyT1KyxCmAGTVCvPznaK8VhG3ts7rTt7byE+lyDXpuvSg==
+"@commitlint/cli@7.5.1":
+  version "7.5.1"
+  resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-7.5.1.tgz#370e465df67325c964c6255f865e914b47405ede"
+  integrity sha512-5LTc56dbuK+B83JPriUraORD/opZTqmJg43A0AgZLw01ougEvaE/bGqCEmMcEFapNohHPbdFLbuSRdXlUMWFMQ==
   dependencies:
     "@commitlint/format" "^7.5.0"
-    "@commitlint/lint" "^7.5.0"
+    "@commitlint/lint" "^7.5.1"
     "@commitlint/load" "^7.5.0"
     "@commitlint/read" "^7.5.0"
     babel-polyfill "6.26.0"
@@ -141,19 +141,19 @@
     babel-runtime "^6.23.0"
     chalk "^2.0.1"
 
-"@commitlint/is-ignored@^7.5.0":
-  version "7.5.0"
-  resolved "https://registry.yarnpkg.com/@commitlint/is-ignored/-/is-ignored-7.5.0.tgz#3531e311a3548504a2ee1420ffb5e1d944a2f6e0"
-  integrity sha512-5Nd/driOV9IFwJ7e0+g7I8pqq3EOs8dP0C2wxOpwUAL8C5saf+VGMe0HN6iPGLktITP6fHPrKisOdEJ6sRg2lw==
+"@commitlint/is-ignored@^7.5.1":
+  version "7.5.1"
+  resolved "https://registry.yarnpkg.com/@commitlint/is-ignored/-/is-ignored-7.5.1.tgz#c4f7ffc1c8b4cf9dc3204d22ef8e78ff82536d67"
+  integrity sha512-8JZCgy6bWSnjOT5cTTiyEAGp+Y4+5CUknhVbyiPxTRbjy6yF0aMKs1gMTfHrNHTKsasgmkCyPQd4C2eOPceuKA==
   dependencies:
     semver "5.6.0"
 
-"@commitlint/lint@^7.5.0":
-  version "7.5.0"
-  resolved "https://registry.yarnpkg.com/@commitlint/lint/-/lint-7.5.0.tgz#6f8560b491e10ec2a5a894d5d701cd6444547072"
-  integrity sha512-sRd6V/SoJuF6Qwwd9cjz8pLd8lCh1jisnyRlubkq0spgZFR9IXE3Qj1hK29q4EPVvXHwli/z3fBZx2hrrZqqsQ==
+"@commitlint/lint@^7.5.1":
+  version "7.5.1"
+  resolved "https://registry.yarnpkg.com/@commitlint/lint/-/lint-7.5.1.tgz#e0ff67c759a5633609a3f50318a382005be22fff"
+  integrity sha512-y0clwEl+l1EcuFA1ckV0HnHJpH3VOBAmXGVBQicglvWGG1sXBl1iJUqBEzi2xExq36EINKsXLjs45272H9I1dQ==
   dependencies:
-    "@commitlint/is-ignored" "^7.5.0"
+    "@commitlint/is-ignored" "^7.5.1"
     "@commitlint/parse" "^7.5.0"
     "@commitlint/rules" "^7.5.0"
     babel-runtime "^6.23.0"
@@ -278,10 +278,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.18.tgz#1d3ca764718915584fcd9f6344621b7672665c67"
   integrity sha512-fh+pAqt4xRzPfqA6eh3Z2y6fyZavRIumvjhaCL753+TVkGKGhpPeyrJG2JftD0T9q4GF00KjefsQ+PQNDdWQaQ==
 
-"@types/node@10.12.21":
-  version "10.12.21"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.21.tgz#7e8a0c34cf29f4e17a36e9bd0ea72d45ba03908e"
-  integrity sha512-CBgLNk4o3XMnqMc0rhb6lc77IwShMEglz05deDcn2lQxyXEZivfwgYJu7SMha9V5XcrP6qZuevTHV/QrN2vjKQ==
+"@types/node@10.12.24":
+  version "10.12.24"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.24.tgz#b13564af612a22a20b5d95ca40f1bffb3af315cf"
+  integrity sha512-GWWbvt+z9G5otRBW8rssOFgRY87J9N/qbhqfjMZ+gUuL6zoL+Hm6gP/8qQBG4jjimqdaNLCehcVapZ/Fs2WjCQ==
 
 "@types/stream-chain@*":
   version "2.0.0"
@@ -4106,10 +4106,10 @@ type-detect@^4.0.0, type-detect@^4.0.5:
   resolved "https://registry.yarnpkg.com/type-detect/-/type-detect-4.0.8.tgz#7646fb5f18871cfbb7749e69bd39a6388eb7450c"
   integrity sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g==
 
-typescript@3.3.1:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.3.1.tgz#6de14e1db4b8a006ac535e482c8ba018c55f750b"
-  integrity sha512-cTmIDFW7O0IHbn1DPYjkiebHxwtCMU+eTy30ZtJNBPF9j2O1ITu5XH2YnBeVRKWHqF+3JQwWJv0Q0aUgX8W7IA==
+typescript@3.3.3:
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.3.3.tgz#f1657fc7daa27e1a8930758ace9ae8da31403221"
+  integrity sha512-Y21Xqe54TBVp+VDSNbuDYdGw0BpoR/Q6wo/+35M8PAU0vipahnyduJWirxxdxjsAkS7hue53x2zp8gz7F05u0A==
 
 uglify-js@^3.1.4:
   version "3.4.9"
