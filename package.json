@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "8.3.4",
-    "@commitlint/config-conventional": "7.5.0",
+    "@commitlint/config-conventional": "8.3.4",
     "@types/chai": "4.1.7",
     "@types/node": "11.9.3",
     "chai": "4.2.0",
