@@ -20,7 +20,7 @@
   "devDependencies": {
     "@commitlint/cli": "7.5.2",
     "@commitlint/config-conventional": "7.5.0",
-    "@types/chai": "4.1.7",
+    "@types/chai": "4.2.11",
     "@types/node": "11.9.3",
     "chai": "4.2.0",
     "chai-as-promised": "7.1.1",
