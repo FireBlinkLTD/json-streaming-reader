@@ -14,7 +14,7 @@
   "author": "FireBlink LTD",
   "license": "MIT",
   "dependencies": {
-    "@types/stream-json": "1.0.0",
+    "@types/stream-json": "1.0.1",
     "stream-json": "1.1.4"
   },
   "devDependencies": {
