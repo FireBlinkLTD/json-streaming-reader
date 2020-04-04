@@ -263,11 +263,6 @@
   resolved "https://registry.yarnpkg.com/@types/chai/-/chai-4.1.7.tgz#1b8e33b61a8c09cbe1f85133071baa0dbf9fa71a"
   integrity sha512-2Y8uPt0/jwjhQ6EiluT0XCri1Dbplr0ZxfFXUz+ye13gaqE8u5gL5ppao1JrUYr9cIip5S6MvQzBS7Kke7U9VA==
 
-"@types/events@*":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@types/events/-/events-3.0.0.tgz#2862f3f58a9a7f7c3e78d79f130dd4d71c25c2a7"
-  integrity sha512-EaObqwIvayI5a8dCzhFrjKzVwKLxjoG9T6Ppd5CEo07LRKfQ8Yokw54r5+Wq7FaBQ+yXRvQAYPrHwya1/UFt9g==
-
 "@types/mocha@^5.2.0":
   version "5.2.6"
   resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-5.2.6.tgz#b8622d50557dd155e9f2f634b7d68fd38de5e94b"
@@ -285,12 +280,11 @@
   dependencies:
     "@types/node" "*"
 
-"@types/stream-json@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@types/stream-json/-/stream-json-1.0.0.tgz#10f8703c731633b14c644f6aa81d0ede41732bcb"
-  integrity sha512-W9B6R5GPbTq72Oz/oJZ8qSl3+6g2xbBK0et+pK/LwGpoSWsHh2AVEYLuQUBUzg+ps4xZGdYJP5nqsW17DFbxzQ==
+"@types/stream-json@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@types/stream-json/-/stream-json-1.0.1.tgz#668b471b952b2176b558e48becb9483d4a202de3"
+  integrity sha512-RbvtL2EHmMDuIKjf5vvv0buHUc1aU9dJ2ovoxcbtqUCWENpwDXDQVY6hN8dUxqHelDHRdW122plF7KsCLNMm6Q==
   dependencies:
-    "@types/events" "*"
     "@types/node" "*"
     "@types/stream-chain" "*"
 
